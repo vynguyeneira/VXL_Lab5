@@ -32,7 +32,10 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "f_command_parser.h"
+#include "f_global.h"
+#include "f_timer.h"
+#include "f_uart_communication.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
