@@ -31,7 +31,7 @@ void uart_communication_fsm(ADC_HandleTypeDef hadc1,
 
 		case SEND_ADC:
 			// Display ADC value console, status = WAIT_OK
-			HAL_UART_Transmit(&huart2, (void*)str, sprintf(str, "\r\n"), 1000);
+			HAL_UART_Transmit(&huart2, (void*)str, sprintf(str, "!ADC=%lu#\r\n", ADC_value), 1000);
 			status_uart = WAIT_OK;
 			break;
 
